@@ -1,0 +1,3 @@
+Saitama,6000
+Venomich,5000
+Doomguy,6666
