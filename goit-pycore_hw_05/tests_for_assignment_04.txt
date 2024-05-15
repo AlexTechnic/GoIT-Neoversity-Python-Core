@@ -1,0 +1,32 @@
+# Test case 1: Adding a contact
+contacts = {}
+add_contact(["John", "1234567890"], contacts)
+assert contacts == {"John": "1234567890"}
+
+# Test case 2: Changing a contact
+contacts = {"John": "1234567890"}
+change_contact(["John", "9876543210"], contacts)
+assert contacts == {"John": "9876543210"}
+
+# Test case 3: Showing phone number of a contact
+contacts = {"John": "1234567890"}
+result = show_phone(["John"], contacts)
+assert result == "John's phone number is 1234567890"
+
+# Test case 4: Showing all contacts
+contacts = {"John": "1234567890", "Jane": "9876543210"}
+result = show_all(contacts)
+assert result == "John: 1234567890\nJane: 9876543210"
+
+# Test case 5: Invalid command
+result = parse_input("invalid command")
+assert result == ("invalid", [])
+
+# Test case 6: Exiting the program
+result = parse_input("exit")
+assert result == ("exit", [])
+
+# Test case 7: Empty contacts
+contacts = {}
+result = show_all(contacts)
+assert result == "No contacts stored."
