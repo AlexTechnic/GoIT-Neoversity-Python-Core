@@ -15,9 +15,12 @@ class Field:
         return str(self.value)
 
 
-# Name class represents contact name
+# Name class represents contact name with added simple validation that name cannot be empty
 class Name(Field):
-    pass
+    def __init__(self, value):
+        if not value:
+            raise ValueError("Name cannot be empty")
+        super().__init__(value)
 
 
 # Phone class represents contact phone number
