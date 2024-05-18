@@ -14,13 +14,13 @@ CLI bot project
 
 bot supported commands:
 
-help - general help about bot supported commands
-hello - greet the user and ask for a command
-add - add a new contact or update an existing one with a phone number
-change - change a contact's phone number 
-phone - show a contact's phone numbers 
-all - show all contacts in the address book
-add-birthday - add a birthday to a contact 
-show-birthday - show a contact's birthday 
-birthdays - show upcoming birthdays 
-close or exit - close the bot
+[hello] - greet the user and ask for a command
+[add] [name] [phone] - add a new contact or update an existing one with a phone number
+[delete] [name] - delete the specified contact
+[change] [name] [phone] - change a contact's phone number
+[phone] [name] - show a contact's phone numbers
+[all] - show all contacts in the address book
+[add-birthday] [name] [DD.MM.YYYY] - add a birthday date to a contact
+[show-birthday] [name] - show a contact's birthday
+[birthdays] - show upcoming birthdays
+[close] or [exit] - close the bot
